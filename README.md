@@ -1,7 +1,7 @@
 # 06 Server-Side APIs: Weather Dashboard
 
 ## Live Site
-[Live Site](https://lilianaba.github.io/challengew6/)
+[Live Site](https://lilianaba.github.io/challengew6/) Still under development.
 
 
 ## Your Task
