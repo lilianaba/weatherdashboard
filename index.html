@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- We need to ensure the other styles are loaded before our stylesheet utilizes them -->
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+  <!-- Compiled and minified Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+       
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Weather Forecast</title>
+</head>
+
+<body >
+  <header class="indigo darken-1" >
+    <div class="row col s12 center white-text">
+        <h1>Weather Dashboard</h1>
+    </div>
+</header>
+
+
+  <main >
+    <div class="col s12 l4  left">
+      <div class="row">
+      <h3 class="card-header text-uppercase">Search for a City:</h3>
+        <form id="user-form" class="card-body">
+          <label class="form-label" for="username">San Diego</label>
+          <input name="username" id="username" type="text" autofocus="true" class="form-input" />
+          <button type="submit" class="btn">Search</button>
+        </form>
+      </div>
+     
+      <div class="row">
+        <p>Searched City list</p>
+        <ul id="city-list"></ul>
+  
+
+      </div>
+    </div>
+    
+    <div class="col s12 l8  left">
+      <div class="row">
+        <h1>something here</h1> 
+
+
+     </div>
+
+    
+
+      <div class="row"> 
+      <h2 class="forecast">5-Day Forecast: <span id="forecast"></span></h2>
+      <!-- There needs to be an empty HTML element for us to write repository data to. -->
+      <div id="repos-container" class="list-group"></div>
+    </div>
+    </div>
+  </main>
+
+  <script src="./assets/js/scripts.js"></script>
+</body>
+
+</html>
