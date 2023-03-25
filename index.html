@@ -25,27 +25,25 @@
   <main >
     <div class="col s12 l4  left">
       <div class="row">
-      <h3 class="card-header text-uppercase">Search for a City:</h3>
+      <h2 class="card-header text-uppercase">Search for a City:</h2>
         <form id="user-form" class="card-body">
           <label class="form-label" for="username">San Diego</label>
-          <input name="username" id="username" type="text" autofocus="true" class="form-input" />
+          <input name="userCity" id="userCity" type="text" autofocus="true" class="form-input" />
           <button type="submit" class="btn">Search</button>
         </form>
       </div>
      
       <div class="row">
         <p>Searched City list</p>
-        <ul id="city-list"></ul>
+        <div id="city-list"></div>
   
 
       </div>
     </div>
     
-    <div class="col s12 l8  left">
-      <div class="row">
-        <h1>something here</h1> 
-
-
+    <div class="col s12 l8  right">
+      <div class="row currentweather">
+      
      </div>
 
     
@@ -53,12 +51,12 @@
       <div class="row"> 
       <h2 class="forecast">5-Day Forecast: <span id="forecast"></span></h2>
       <!-- There needs to be an empty HTML element for us to write repository data to. -->
-      <div id="repos-container" class="list-group"></div>
+      <div id="forecast-list" ></div>
     </div>
     </div>
   </main>
 
-  <script src="./assets/js/scripts.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
