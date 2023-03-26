@@ -49,13 +49,28 @@ h3{
 }
 .left{
   margin:5px;
-  width: auto;
+  width: 20%;
   padding-right: 5px;
+  background-color:blanchedalmond;
 }
 .right{
   width: auto;
+  margin-left: 5px;
+  background-color: #ccdad1;
   
 }
 #city-list{
   list-style-type: circle;
+}
+#forecast-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+#forecast-list div{
+  background-color: darksalmon;
+  margin:5px;
+  border-radius: 10px;
 }
