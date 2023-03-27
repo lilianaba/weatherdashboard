@@ -3,7 +3,7 @@ var currentweather = document.querySelector(".currentweather");
 var cityList = document.querySelector("#city-list");
 // var forecast = document.querySelector('#forecast');
 var userCity = document.querySelector("#userCity");
-var historyCity = document.querySelector(".btn-outline-info[value]");
+var historyCity = document.querySelector(".btn-outline-info");
 var forecastListEl = document.querySelector("#forecast-list");
 const apiKey = "5f95d7a679cab867a94961cf83fc403f";
 
@@ -127,15 +127,14 @@ const fetchCurrentWeather = (city) => {
 
 function createRow(city) {
   // cityList = []
-  let cityIt = document.createElement("li");
+  let cityIt = document.createElement("btn");
   // cityIt.classList.add("btn");
   cityIt.classList.add("btn-outline-info");
-  cityIt.setAttribute("value",city);
+  cityIt.setAttribute("data-city", city);
   cityIt.innerText = city;
   cityList.append(cityIt);
   // console.log("Requested city: " + city);
   // console.log(cityList);
-
 }
 
 const searchCity = (event) => {
@@ -146,10 +145,12 @@ const searchCity = (event) => {
   userCity.value = "";
 };
 
-userFormEl.addEventListener("submit", searchCity);
-cityList.addEventListener("click", function () {
-  hcity = historyCity;
+function getHistory() {
+  var hcity = this.getAttribute("data-city");
   console.log(hcity);
   fetchCurrentWeather(hcity);
   forecast(hcity);
-});
+}
+
+
+userFormEl.addEventListener("submit", searchCity);
