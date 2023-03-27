@@ -129,12 +129,13 @@ function getHistory() {
   console.log("History City: " + hcity);
   fetchCurrentWeather(hcity);
   forecast(hcity);
+ 
 }
 
 
 function createRow(city) {
   // cityList = []
-  let cityIt = document.createElement("btn");
+  let cityIt = document.createElement("button");
   // cityIt.classList.add("btn");
   cityIt.classList.add("btn-outline-info");
   cityIt.setAttribute("data-city",city);
@@ -151,6 +152,7 @@ const searchCity = (event) => {
   fetchCurrentWeather(search);
   forecast(search);
   userCity.value = "";
+
 };
 
 

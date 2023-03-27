@@ -61,8 +61,12 @@ h3{
   /* background-color: #ccdad1; */
   
 }
-#city-list a{
+#city-list button{
+  border-color: aquamarine;
   list-style-type: circle;
+  color: aliceblue;
+  font-style: bold;
+  background-color: #6f6866;
 }
 #forecast-list {
   display: flex;
