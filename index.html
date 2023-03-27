@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- We need to ensure the other styles are loaded before our stylesheet utilizes them -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
   <!-- Compiled and minified Materialize CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -23,9 +26,9 @@
 
 
   <main >
-    <div class="col s12 l4  left">
-      <div class="row">
-      <h2 class="card-header text-uppercase">Search for a City:</h2>
+    <div class="col-3 s3 l4  left">
+      <div class="col">
+      <h2 class=" text-uppercase">Search for a City:</h2>
         <form id="user-form" class="card-body">
           <label class="form-label" for="username">San Diego</label>
           <input name="userCity" id="userCity" type="text" autofocus="true" class="form-input" />
@@ -33,15 +36,16 @@
         </form>
       </div>
      
-      <div class="row">
+      <div class="col">
         <p>Searched City list</p>
+        <p> </p>
         <div id="city-list"></div>
   
 
       </div>
     </div>
     
-    <div class="col s12 l8  right">
+    <div class="col s3 l8  right">
       <div class="currentweather">
       
      </div>

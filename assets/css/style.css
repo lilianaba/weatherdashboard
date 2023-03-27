@@ -31,7 +31,7 @@ body {
   position: relative;
 }
 main {
-  margin:20px;
+  /* margin-left:10px; */
   height: 100%;
   box-sizing: border-box ;
   display: flex;
@@ -48,18 +48,20 @@ h3{
   font-size: 1.5rem;
 }
 .left{
-  margin:5px;
-  width: 20%;
-  padding-right: 5px;
-  background-color:blanchedalmond;
+  /* margin:5px; */
+  /* width: 20%; */
+  /* padding-right: 5px; */
+  /* background-color:blanchedalmond; */
+  display: flex;
+  flex-direction: column !important;
 }
 .right{
   width: auto;
   margin-left: 5px;
-  background-color: #ccdad1;
+  /* background-color: #ccdad1; */
   
 }
-#city-list{
+#city-list a{
   list-style-type: circle;
 }
 #forecast-list {
@@ -70,7 +72,7 @@ h3{
   align-content: center;
 }
 #forecast-list div{
-  background-color: darksalmon;
+  background-color:burlywood;
   margin:5px;
   border-radius: 10px;
 }
