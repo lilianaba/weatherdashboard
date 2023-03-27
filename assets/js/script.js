@@ -124,15 +124,23 @@ const fetchCurrentWeather = (city) => {
       alert("Unable to connect to weather API");
     });
 };
+function getHistory() {
+  var hcity = this.getAttribute("data-city");
+  console.log("History City: " + hcity);
+  fetchCurrentWeather(hcity);
+  forecast(hcity);
+}
+
 
 function createRow(city) {
   // cityList = []
   let cityIt = document.createElement("btn");
   // cityIt.classList.add("btn");
   cityIt.classList.add("btn-outline-info");
-  cityIt.setAttribute("data-city", city);
+  cityIt.setAttribute("data-city",city);
   cityIt.innerText = city;
   cityList.append(cityIt);
+  cityIt.onclick = getHistory;
   // console.log("Requested city: " + city);
   // console.log(cityList);
 }
@@ -145,12 +153,6 @@ const searchCity = (event) => {
   userCity.value = "";
 };
 
-function getHistory() {
-  var hcity = this.getAttribute("data-city");
-  console.log(hcity);
-  fetchCurrentWeather(hcity);
-  forecast(hcity);
-}
 
 
 userFormEl.addEventListener("submit", searchCity);
